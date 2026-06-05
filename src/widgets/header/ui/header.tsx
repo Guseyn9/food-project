@@ -8,11 +8,9 @@ import { HeaderCart } from '../../../enteties/headerCart/ui/headerCart'
 import { useSelector } from 'react-redux'
 import { Burger } from '../../../shared/burger/ui/burger'
 import { CloseBtn } from '../../../enteties/closeBtn/ui/closeBtn'
-import { Login } from '../../../enteties/login/ui/login'
 import { selectUser } from '../../../shared/common/model/useStore/selector'
 import { useAppDispatch } from '../../../app/store/store'
 import { retrieveToken } from '../../../shared/common/model/useStore/slice'
-import { User } from '../../../enteties/user/ui/user'
 
 type Props = {
   searchValue?: string;
@@ -45,8 +43,6 @@ export const Header = ({ searchValue, setSearchValue }: Props) => {
     isMounted.current = true;
   }, [items])
 
-  const pathname = window.location.pathname;
-
   const navigate = useNavigate()
 
   const goHome = () => {
@@ -66,9 +62,6 @@ export const Header = ({ searchValue, setSearchValue }: Props) => {
   }
   const goStocks = () => {
     navigate('/stocks')
-  }
-  const goLogin = () => {
-    navigate('/login')
   }
   return (
     <Styled.header>

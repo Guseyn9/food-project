@@ -1,6 +1,5 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import { Header } from '../../../widgets/header/ui/header'
 import { Home } from '../../../widgets/Home/ui/home'
 import { Recommend } from '../../../widgets/recommend/ui/recommend'
 import { Footer } from '../../../widgets/footer/ui/footer'

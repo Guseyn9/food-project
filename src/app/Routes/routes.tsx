@@ -9,7 +9,6 @@ import { AboutUs } from '../../pages/aboutUs/ui/aboutUs';
 import { Contacts } from '../../pages/contacts/ui/contacts';
 import { BasketPage } from '../../pages/basketPage/ui/basketPage';
 import { styled } from 'styled-components'
-import { LoginPage } from '../../pages/loginPage/ui/loginPage';
 
 type Props = {}
 
@@ -28,7 +27,6 @@ export const RoutesApp = (props: Props) => {
           <Route path="/stocks" element={<EmptyBasketPage title='Акций пока нет 😕' descr='
             Мы постараемся как можно быстрее ввести новые акции, а пока возвращайтесь на главную
           ' />} />
-          <Route path="/login" element={<LoginPage />} />
       </Routes>
       <GlobalStyled />
     </>
