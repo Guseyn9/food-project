@@ -84,7 +84,7 @@ export const Recommend = ({ title, searchValue, className }: Props) => {
                 }
             </Styled.productsContent>
             <Styled.btnBlock>
-              {pathName == '/' && <RecomBtn name='Все продукты' onClick={goAssortment} />}
+              {pathName === '/' && <RecomBtn name='Все продукты' onClick={goAssortment} />}
             </Styled.btnBlock>
         </Styled.container>
     </Styled.recommend>
